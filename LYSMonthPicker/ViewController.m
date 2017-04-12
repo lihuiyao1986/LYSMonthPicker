@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LYSMonthChooser.h"
+#import "LYSDatePicker.h"
 
 @interface ViewController ()
 
@@ -29,14 +30,22 @@
 }
 
 -(void)btnClicked:(UIButton*)sender{
-    LYSMonthChooser *chooser = [LYSMonthChooser new];
-    chooser.minYear = 2000;
-    chooser.SelectedBlock = ^(NSString *date){
-        NSLog(@"you choose Month is %@",date);
+  
+    
+    LYSDatePicker *picker = [LYSDatePicker new];
+    picker.datePickerMode = UIDatePickerModeDate;
+    picker.SelectedBlock = ^(NSDate * date){
+        NSLog(@"%@",[self formatDate:date format:@"yyyyMMddHHmmss"]);
     };
-    [chooser show];
+    [picker show];
 }
 
+
+-(NSString*)formatDate:(NSDate*)date format:(NSString*)format{
+    NSDateFormatter *formatter = [NSDateFormatter new];
+    formatter.dateFormat = format;
+    return [formatter stringFromDate:date];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

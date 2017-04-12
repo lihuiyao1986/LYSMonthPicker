@@ -15,6 +15,7 @@
 		482876951E9DF5FC00E2E365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482876931E9DF5FC00E2E365 /* LaunchScreen.storyboard */; };
 		4828769F1E9DF62000E2E365 /* LYSMonthPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4828769E1E9DF62000E2E365 /* LYSMonthPicker.m */; };
 		482876A21E9DF9D100E2E365 /* LYSMonthChooser.m in Sources */ = {isa = PBXBuildFile; fileRef = 482876A11E9DF9D100E2E365 /* LYSMonthChooser.m */; };
+		482876A51E9E501A00E2E365 /* LYSDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 482876A41E9E501A00E2E365 /* LYSDatePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		4828769E1E9DF62000E2E365 /* LYSMonthPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSMonthPicker.m; sourceTree = "<group>"; };
 		482876A01E9DF9D100E2E365 /* LYSMonthChooser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSMonthChooser.h; sourceTree = "<group>"; };
 		482876A11E9DF9D100E2E365 /* LYSMonthChooser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSMonthChooser.m; sourceTree = "<group>"; };
+		482876A31E9E501A00E2E365 /* LYSDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYSDatePicker.h; sourceTree = "<group>"; };
+		482876A41E9E501A00E2E365 /* LYSDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYSDatePicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				4828769E1E9DF62000E2E365 /* LYSMonthPicker.m */,
 				482876A01E9DF9D100E2E365 /* LYSMonthChooser.h */,
 				482876A11E9DF9D100E2E365 /* LYSMonthChooser.m */,
+				482876A31E9E501A00E2E365 /* LYSDatePicker.h */,
+				482876A41E9E501A00E2E365 /* LYSDatePicker.m */,
 			);
 			path = LYSMonthPicker;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482876A51E9E501A00E2E365 /* LYSDatePicker.m in Sources */,
 				4828768D1E9DF5FC00E2E365 /* ViewController.m in Sources */,
 				4828768A1E9DF5FC00E2E365 /* AppDelegate.m in Sources */,
 				482876871E9DF5FC00E2E365 /* main.m in Sources */,
@@ -293,11 +299,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: An Huang (DH837PH54F)";
 				DEVELOPMENT_TEAM = 4CX6972XTR;
 				INFOPLIST_FILE = LYSMonthPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lys.test.LYSMonthPicker;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baichuan-gas.GasTreasure";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "537d495c-6619-4060-976d-429e0a9be488";
 			};
 			name = Debug;
 		};
@@ -305,11 +314,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: An Huang (DH837PH54F)";
 				DEVELOPMENT_TEAM = 4CX6972XTR;
 				INFOPLIST_FILE = LYSMonthPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lys.test.LYSMonthPicker;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baichuan-gas.GasTreasure";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "537d495c-6619-4060-976d-429e0a9be488";
 			};
 			name = Release;
 		};
